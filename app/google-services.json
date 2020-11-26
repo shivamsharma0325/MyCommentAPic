@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "188875943675",
+    "firebase_url": "https://commentapic-ffa01.firebaseio.com",
+    "project_id": "commentapic-ffa01",
+    "storage_bucket": "commentapic-ffa01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188875943675:android:b8493afcd726297bd80a5e",
+        "android_client_info": {
+          "package_name": "com.test.mycommentapic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "188875943675-9eldto3ja31s1dg45ckarkjh3jd265ee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKmrgbCaARmGTp6v1MrMZbfU65VjhWQWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "188875943675-9eldto3ja31s1dg45ckarkjh3jd265ee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to CommentAPic"
+        android:layout_gravity="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:text="Sign In"
+        android:layout_gravity="center"
+       >
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+
+        android:layout_marginTop="20dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/txt_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="10dp"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="LOGIN" />
+
+    <ProgressBar
+        android:id="@+id/prg_bar"
+        android:visibility="invisible"
+        android:layout_width="75dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+/>
+
+    <TextView
+        android:layout_width="262dp"
+        android:layout_height="36dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Do not have an account?" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="283dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+
+        android:text="Register" />
+
+
+
+</LinearLayout>
+</ScrollView>
