@@ -3,6 +3,7 @@ package com.test.mycommentapic;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
@@ -25,7 +26,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn_submit,btn_fetch;
+    Button btn_submit,btn_fetch,btn_retrofit, btn_retrofit_post;
     TextView txt_comments_output;
     EditText txt_name,txt_comment;
     FirebaseFirestore firebaseFirestore;
@@ -41,8 +42,31 @@ public class MainActivity extends AppCompatActivity {
         txt_comment=findViewById(R.id.txt_comment);
         txt_name=findViewById(R.id.txt_name);
         txt_comments_output=findViewById(R.id.textview_comments);
+
+        btn_retrofit=findViewById(R.id.btn_retrofit);
+        btn_retrofit_post=findViewById(R.id.btn_retrofit_post);
+
         btn_fetch=findViewById(R.id.btn_fetchcomment);
         btn_submit=findViewById(R.id.btn_submit);
+        btn_retrofit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent =new Intent(MainActivity.this,RetrofitActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+        btn_retrofit_post.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent =new Intent(MainActivity.this,RetrofitPostAvtivity.class);
+                startActivity(intent);
+
+            }
+        });
         btn_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
